@@ -10,7 +10,7 @@ setup(
     long_description_content_type="text/markdown",
     url="https://squarealgerie.com",
     project_urls={
-        "Source": "https://github.com/1khvled/square-dz",
+        "Source": "https://github.com/1khvled/algeria-exchange-rates-api",
         "Tracker": "https://squarealgerie.com",
     },
     packages=find_packages(),
