@@ -115,6 +115,23 @@ curl -s https://squarealgerie.com/api/rates | jq .
 
 ---
 
+## 🛡️ Rate Limits & Fair Use Policy
+
+To ensure high availability and protect free tier community infrastructure, all public API endpoints enforce edge-level rate limiting powered by Cloudflare:
+
+* **Quota:** **60 requests per minute** per client IP (1 req/sec sustained, burstable to 60).
+* **Preflight Requests (`OPTIONS`):** Not counted toward the quota.
+* **Response Headers:**
+  * `X-RateLimit-Limit`: Maximum requests allowed in the 60-second window (`60`).
+  * `X-RateLimit-Remaining`: Number of requests remaining in the current window.
+  * `X-RateLimit-Reset`: Unix timestamp when the current window expires.
+  * `Retry-After`: Seconds to wait before retrying if rate limit is exceeded (HTTP `429 Too Many Requests`).
+
+> [!TIP]
+> All public API endpoints return `Cache-Control: public, max-age=60, stale-while-revalidate=300`. It is best practice to cache responses on the client side for at least 60 seconds.
+
+---
+
 ## 📚 Reference Guides & Documentation
 
 To understand the mechanics of the Algerian parallel currency system, check out the in-depth guides published on our platform:
