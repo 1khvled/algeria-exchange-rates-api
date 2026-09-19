@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "square-algerie"
+version = "1.0.0"
+authors = [
+  { name="Square Live DZ", email="contact@squarealgerie.com" },
+]
+description = "Official Python SDK to fetch real-time Algerian parallel exchange rates (Square Port-Saïd), official bank rates, P2P USDT, and gold prices from SquareAlgerie.com"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = []

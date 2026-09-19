@@ -1,0 +1,39 @@
+{
+  "name": "algeria-rates-api",
+  "version": "1.0.0",
+  "description": "Official open-source TypeScript/JavaScript SDK to fetch real-time Algerian parallel forex (Square Port-Saïd), official bank rates, P2P USDT (BaridiMob), gold prices, and Bourse d'Alger cotations.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "node examples/demo.js"
+  },
+  "keywords": [
+    "algeria",
+    "dinar",
+    "dzd",
+    "square-port-said",
+    "squarealgerie",
+    "exchange-rates",
+    "currency",
+    "euro-dinar",
+    "usdt-p2p",
+    "baridimob",
+    "gold-algeria",
+    "bourse-alger",
+    "sgbv"
+  ],
+  "author": "Square Live DZ <contact@squarealgerie.com> (https://squarealgerie.com)",
+  "homepage": "https://squarealgerie.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1khvled/square-dz.git"
+  },
+  "bugs": {
+    "url": "https://github.com/1khvled/square-dz/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
